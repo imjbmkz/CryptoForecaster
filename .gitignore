@@ -1,0 +1,26 @@
+# Virtual environment and environment file
+**/env/*
+.env
+
+# Notebook files
+*.ipynb
+
+# Python cache files
+*__pycache__*
+
+# Docker volumes 
+volumes/*
+
+# Batch and PowerShell files
+run.bat
+run.ps1
+
+# Log files
+logs/*
+
+# Airflow files
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+standalone_admin_password.txt
+webserver_config.py
