@@ -2,13 +2,13 @@
     {
         "coin_id": "ethereum",
         "vs_currency": "php",
-        "days": 90
+        "days": 1
     },
 
     {
         "coin_id": "bitcoin",
         "vs_currency": "php",
-        "days": 90
+        "days": 1
     }
 
 ]

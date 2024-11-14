@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.1102.0 (24.10)"
+        "value": "2.138.782.0 (24.11)"
       },
       {
         "name": "PBI_ProTooling",
@@ -172,7 +172,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Json.Document(Web.Contents(\"http://localhost:4545/get_predictions?n=24&coin_id=ethereum\")),",
+                "    Source = Json.Document(Web.Contents(\"http://localhost:4545/get_predictions?n=12&coin_id=ethereum\")),",
                 "    #\"Converted to Table\" = Table.FromRecords({Source}),",
                 "    #\"Expanded data\" = Table.ExpandListColumn(#\"Converted to Table\", \"data\"),",
                 "    #\"Expanded data1\" = Table.ExpandRecordColumn(#\"Expanded data\", \"data\", {\"timestamp\", \"price\", \"tagging\"}, {\"timestamp\", \"price\", \"tagging\"}),",

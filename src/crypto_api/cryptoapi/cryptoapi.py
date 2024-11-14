@@ -54,7 +54,7 @@ def generate_predictions(n: int, coin_id: str, engine: Engine, model) -> pd.Data
     for _ in range(n):
         # Get the next timestamp 
         last_timestamp = df_results["timestamp"].max()
-        next_timestamp = last_timestamp + dt.timedelta(hours=1)
+        next_timestamp = last_timestamp + dt.timedelta(minutes=5)
 
         # Get the last 6 records for feature engineering
         x = df_results.tail(6)

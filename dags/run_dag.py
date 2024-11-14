@@ -40,7 +40,7 @@ with DAG(
     dag_id="dag_run_scraper_and_model_docker_operator_v01",
     description="Run crypto_scraper and crypto_model using Docker operator in Airflow locally",
     # Set your desired schedule interval or use None for manual triggering
-    schedule_interval="0 */2 * * *", # every 2 hours
+    # schedule_interval="0 */2 * * *", # every 2 hours
     catchup=False, # avoid running previous schedules
 ) as dag:
     

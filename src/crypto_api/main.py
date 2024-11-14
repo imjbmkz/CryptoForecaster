@@ -22,9 +22,6 @@ DB_NAME = os.getenv("DB_NAME")
 engine = utils.get_dbconn("postgresql+psycopg2", db_host=DB_HOST, db_name=DB_NAME, db_user=DB_USER, db_pass=DB_PASS, db_port=DB_PORT)
 minio_client = utils.get_minio(MINIO_ENDPOINT, MINIO_ACCESS_KEY_ID, MINIO_SECRET_ACCESS_KEY)
 
-c.get_latest_model(minio_client, MINIO_BUCKET_NAME)
-logger.info("The latest model has been downloaded.")
-
 @app.get("/")
 async def root():
     return {
